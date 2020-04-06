@@ -1,5 +1,5 @@
 FROM golang:1.13-alpine AS builder
-LABEL maintainer="joona@kuori.org"
+LABEL maintainer="ridgarou@gmail.com"
 
 RUN apk add --update gcc musl-dev git
 
