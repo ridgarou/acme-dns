@@ -5,17 +5,12 @@ on:
     branches:
     - master
 env:
-  #DOCKER_USERNAME: ${{ github.actor }} #${{ secrets.GITHUB_USERNAME }}
-  #DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
-  #DOCKER_REGISTRY_URL: docker.pkg.github.com
-  #DOCKER_IMAGE_NAME: ${{ github.repository }}/acme-dns
-
   DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
   DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
   DOCKER_REGISTRY_URL: docker.io
   DOCKER_IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/acme-dns
 
-  PLATFORM: linux/arm64
+  PLATFORM: linux/arm/v7
   DOCKER_CACHE_TAG: _cache
   CACHE_VERSION: v2
   BUILDX_VERSION: v0.3.1
