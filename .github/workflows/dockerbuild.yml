@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Acme-DNS Docker Image
 
 on:
   pull_request:
