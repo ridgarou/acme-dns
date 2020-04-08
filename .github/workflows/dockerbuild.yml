@@ -10,7 +10,7 @@ env:
   DOCKER_REGISTRY_URL: docker.io
   DOCKER_IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/acme-dns
 
-  PLATFORM: linux/arm/v7
+  PLATFORM: linux/arm64
   DOCKER_CACHE_TAG: _cache
   CACHE_VERSION: v2
   BUILDX_VERSION: v0.3.1
